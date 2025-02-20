@@ -202,3 +202,25 @@ input[type="time"] {
     content: url("https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/7_days_offer_bangalore_tablet-01cde8d35818dba7fbc24af7b3f912030d93b64a0aea16124301cbbf62cdf127.webp");
   }
 }
+
+/*Section impact images*/
+
+.impact-section .impact-section-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 800;
+  position: relative;
+  top: 2rem;
+  z-index: 3;
+}
+
+.impact-section .impact-section-heading span {
+  color: rgba(254, 210, 80, 1);
+  margin-left: 10px;
+}
+
+.impact-section .impact-image {
+  width: 100%;
+  object-fit: cover;
+}
