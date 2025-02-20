@@ -216,6 +216,7 @@ input[type="time"] {
 .impact-section .impact-section-heading {
   display: flex;
   justify-content: center;
+  font-family:'Mulish', sans-serif;
   font-weight: 900;
   position: relative;
   top: 2rem;
@@ -225,8 +226,11 @@ input[type="time"] {
 .impact-section .impact-section-heading span {
   color: rgba(254, 210, 80, 1);
   margin-left: 10px;
+  font-family:'Mulish', sans-serif;
 }
-
+.impact-section .impact-section-heading p {
+  font-family:'Mulish', sans-serif;
+}
 .impact-section .impact-image {
   object-fit: cover;
   text-align: center;
@@ -235,10 +239,10 @@ input[type="time"] {
 /* Large Desktop (1200px and up) */
 @media screen and (min-width: 1200px) {
   .impact-section-heading {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .impact-image {
-    width: 70%;
+    width: 80%;
   }
 }
 
