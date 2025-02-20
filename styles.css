@@ -216,7 +216,7 @@ input[type="time"] {
 .impact-section .impact-section-heading {
   display: flex;
   justify-content: center;
-  font-family:'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 900;
   position: relative;
   top: 2rem;
@@ -226,10 +226,10 @@ input[type="time"] {
 .impact-section .impact-section-heading span {
   color: rgba(254, 210, 80, 1);
   margin-left: 10px;
-  font-family:'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 .impact-section .impact-section-heading p {
-  font-family:'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 .impact-section .impact-image {
   object-fit: cover;
@@ -411,6 +411,23 @@ input[type="time"] {
   width: 2.8rem;
   height: 0.25rem;
   background-color: #fed250;
+}
+
+.sub-footer-container .presence .locations {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.sub-footer-container .presence .locations a {
+  color: #fff;
+  margin: auto 7px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.sub-footer-container .presence .locations span {
+  color: #fff;
+  margin: 0 5px;
 }
 
 /* last footer */
