@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const prevButton = document.querySelector(".prev-button");
   const nextButton = document.querySelector(".next-button");
 
-  const itemWidth = 300;
+  const itemWidth = 350;
   let currentIndex = 0;
   let autoSlideInterval;
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function startAutoSlide() {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(() => slide("next"), 3000);
+    autoSlideInterval = setInterval(() => slide("next"), 4000);
   }
 
   function stopAutoSlide() {
