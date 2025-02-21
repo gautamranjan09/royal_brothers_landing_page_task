@@ -369,7 +369,7 @@ input[type="time"] {
 .main-footer {
   background-color: #373737;
   color: #fff;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .main-footer .main-footer-container {
@@ -377,19 +377,69 @@ input[type="time"] {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem;
   justify-content: space-between;
-  padding: 3.2em 5.5em;
+  padding: 3.2em 5.5em 1.5em;
 }
-.main-footer .main-footer-container .box-two {
-  margin-left: 70px;
+
+/* .main-footer .main-footer-container .box-one {
+  width: 250px;
+} */
+
+@media screen and (min-width: 1200px) {
+  .main-footer .main-footer-container .box-two {
+    margin-left: 70px;
+  }
+  .main-footer .main-footer-container .box-three {
+    margin-left: 30px;
+  }
 }
-.main-footer .main-footer-container .box-three {
-  margin-left: 30px;
+
+/* @media screen and (max-width: 764.64px) {
+  .main-footer .main-footer-container {
+    padding: 1.5em 5em;
+  }
+} */
+
+@media screen and (max-width: 730px) {
+  .main-footer .main-footer-container .box-one {
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .main-footer .main-footer-container {
+    grid-template-columns: repeat(2, 220px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-footer .main-footer-container {
+    padding: 1.5em 1.5em;
+    grid-gap: 0.5rem;
+  }
+}
+
+/* @media screen and (max-width: 520px) {
+  .main-footer .main-footer-container {
+    grid-template-columns: repeat(2, 200px);
+  }
+} */
+
+@media screen and (max-width: 520px) {
+  .main-footer .main-footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .main-footer .main-footer-container .box-one {
+    grid-column: 1/1;
+  }
 }
 
 .main-footer .main-footer-container .boxes-heading {
   font-size: 0.8em;
   text-transform: uppercase;
-  margin-bottom: 2.1em !important;
+  margin-bottom: 1.6em !important;
 }
 .main-footer .main-footer-container .boxes-heading::after {
   content: "";
@@ -505,6 +555,11 @@ input[type="time"] {
 .sub-footer-container .presence .locations span {
   color: #fff;
   margin: 0 5px;
+}
+@media screen and (max-width: 600px) {
+  .sub-footer-container {
+    padding: 1.5em 1.5em;
+  }
 }
 
 /* last footer */
