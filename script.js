@@ -1,3 +1,38 @@
+//for header dropdown
+// Add this JavaScript to handle edge cases and improve hover behavior
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownTriggers = document.querySelectorAll('.btn-dropdown-trigger');
+    
+    dropdownTriggers.forEach(trigger => {
+      const dropdown = trigger.nextElementSibling;
+      if (!dropdown.classList.contains('dropdown-content')) return;
+      console.log(dropdown);
+      // Handle mouse enter/leave for both trigger and dropdown
+      const showDropdown = () => {
+        dropdown.style.opacity = '1';
+        dropdown.style.visibility = 'visible';
+        dropdown.style.transform = 'translateY(0)';
+      };
+  
+      const hideDropdown = (e) => {
+        const isOverTrigger = trigger.contains(e.relatedTarget);
+        const isOverDropdown = dropdown.contains(e.relatedTarget);
+        
+        if (!isOverTrigger && !isOverDropdown) {
+          dropdown.style.opacity = '0';
+          dropdown.style.visibility = 'hidden';
+          dropdown.style.transform = 'translateY(-10px)';
+        }
+      };
+  
+      trigger.addEventListener('mouseenter', showDropdown);
+      trigger.addEventListener('mouseleave', hideDropdown);
+      dropdown.addEventListener('mouseenter', showDropdown);
+      dropdown.addEventListener('mouseleave', hideDropdown);
+    });
+  });
+
+//for featured section crousel
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector(".carousel-track");
   const items = Array.from(document.querySelectorAll(".carousel-item"));
