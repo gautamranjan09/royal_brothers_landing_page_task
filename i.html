@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Brothers Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+
+        .fixed-bar {
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+            background: #fff;
+        }
+
+        .contact-bar {
+            padding: 6px 24px;
+            display: flex;
+            justify-content: flex-end;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .contact-bar-container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .contact-bar-phone {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
+            justify-content: flex-end;
+        }
+
+        .contact-bar a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .menu-line-seperator {
+            color: #333;
+            margin: 0 4px;
+        }
+
+        .contact-bar a[href*="wa.me"] {
+            color: #006ccc;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .navbar {
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 24px;
+            height: 64px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-wrapper.white {
+            background: #fff;
+        }
+
+        .brand-logo {
+            text-decoration: none;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .brand-logo.left {
+            margin-right: auto;
+        }
+
+        .brand-logo button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .brand-logo-mobile {
+            display: none;
+        }
+
+        .nav-logo {
+            height: auto;
+        }
+
+        .nav-logo-pc {
+            width: 12rem;
+        }
+
+        #nav-mobile {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+            margin: 0;
+            height: 100%;
+        }
+
+        #nav-mobile li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #nav-mobile a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-trigger {
+            height: 100%;
+        }
+
+        .dropdown-trigger button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            height: 100%;
+            padding: 0;
+        }
+
+        #nav-mobile2 {
+            display: flex;
+            list-style: none;
+            gap: 16px;
+            align-items: center;
+            margin: 0;
+            height: 100%;
+        }
+
+        .btn-login {
+            padding: 8px 24px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .btn-small {
+            padding: 8px 24px;
+            background: #fed250;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .current-city {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .nav-line {
+            height: 24px;
+            width: 1px;
+            background: rgba(0,0,0,0.1);
+        }
+
+        .rbx-logo {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .rbx-logo img {
+            height: 20px;
+            width: auto;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #fff;
+            min-width: 180px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 0 0 6px 6px;
+            padding: 8px 0;
+            margin-top: 64px;
+            z-index: 999;
+        }
+
+        .dropdown-content li a {
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .dropdown-content li a:hover {
+            background: rgba(0,0,0,0.04);
+        }
+
+        .sidenav-trigger {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            .hide-on-med-and-down {
+                display: none !important;
+            }
+            
+            .brand-logo-pc {
+                display: none;
+            }
+            
+            .brand-logo-mobile {
+                display: block;
+            }
+            
+            .sidenav-trigger {
+                display: block;
+                margin-right: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-bar">
+        <div class="contact-bar">
+            <div class="contact-bar-container">
+                <div class="contact-bar-phone">
+                    <p class="contact-bar-phone-text">
+                        <svg style="width:12px; height:12px; position: relative; top: 2px; margin-right: 4px;">
+                            <path d="M17.6 19.1h-.3c-3.2-.3-6.3-1.4-9-3.2-2.4-1.7-4.4-3.7-6-6.1-1.7-2.6-2.8-5.4-3.1-8.4v-.2c0-.4.1-.8.3-1.1.3-.3.6-.6 1-.7l4-.1c.7.1 1.2.6 1.4 1.2l.8 3.7c0 .5 0 1-.3 1.4l-1.6 1.7c1.5 2.3 3.3 4.3 5.7 5.9l1.8-1.6c.4-.3.9-.4 1.3-.3l3.7.8c.7.2 1.1.7 1.2 1.4l.1 3.9c0 .4-.2.8-.5 1-.3.3-.7.5-1.1.5" fill="#333"/>
+                        </svg>
+                        <a href="tel:+917795687594">+917795687594</a> / <a href="tel:+919019595595">+919019595595</a>
+                    </p>
+                    <p class="menu-line-seperator">|</p>
+                    <p>
+                        <a href="https://wa.me/919019595595" target="_blank">Chat now</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="nav-wrapper white">
+                <svg class="sidenav-trigger" width="20" height="20">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#333"/>
+                </svg>
+                <a href="/" class="brand-logo left">
+                    <button class="brand-logo-pc">
+                        <img class="nav-logo nav-logo-pc" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/royal_brothers_logo-229959d7727f356b2e4fc3bd9c0c527c60127d009c93989a93e2daa0b1c2d556.svg" alt="Royal Brothers">
+                    </button>
+                    <button class="brand-logo-mobile">
+                        <img class="nav-logo nav-logo-mobile" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/rb_logo_icon-e5352df69056d5b39e69a0dd288cb816077351ab5a415dcf10af07eb29cea3f3.svg" alt="RB">
+                    </button>
+                </a>
+                <ul id="nav-mobile">
+                    <li class="hide-on-med-and-down">
+                        <a href="/long-term" class="rbx-logo">
+                            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/RBX_logo-1b800838228373b51de1f1937bfd16588b29da9e8931b472dc8f7f1592e1f43c.svg" alt="RBX">
+                        </a>
+                    </li>
+                    <li class="hide-on-med-and-down">
+                        <a href="/tariff">Tariff</a>
+                    </li>
+                    <li class="dropdown-trigger hide-on-med-and-down">
+                        <button>
+                            What's new? 
+                            <svg style="width:11px; height:11px; margin-left:12px;">
+                                <path d="M7 10l5 5 5-5z" fill="#333"/>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="hide-on-med-and-down">
+                        <a href="/offers">Offers</a>
+                    </li>
+                    <li class="dropdown-trigger hide-on-med-and-down">
+                        <button>
+                            Partner with Us
+                            <svg style="width:11px; height:11px; margin-left:12px;">
+                                <path d="M7 10l5 5 5-5z" fill="#333"/>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+                <ul id="nav-mobile2">
+                    <li>
+                        <a href="#" class="current-city">
+                            <svg style="width:21px; height:20px;">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#333"/>
+                            </svg>
+                            Bangalore
+                            <svg style="width:12px; height:12px;">
+                                <path d="M7 10l5 5 5-5z" fill="#333"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="hide-on-med-and-down">
+                        <div class="nav-line"></div>
+                    </li>
+                    <li class="hide-on-med-and-down">
+                        <a href="/login" class="btn-login">Login</a>
+                    </li>
+                    <li class="hide-on-med-and-down">
+                        <a href="/signup" class="btn-small">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown-trigger');
+            
+            dropdowns.forEach(dropdown => {
+                const button = dropdown.querySelector('button');
+                const content = document.createElement('ul');
+                content.className = 'dropdown-content';
+                
+                if (button.textContent.includes("What's new")) {
+                    content.innerHTML = `
+                        <li><a href="/store">Store by RB<span style="font-size: 10px;position: relative;top: -8px;color: red;left: -4px;">New</span></a></li>
+                        <li><a href="/adventures">Adventures by RB<span style="font-size: 10px;position: relative;top: -8px;color: red;left: -4px;">New</span></a></li>
+                        <li><a href="/inter-city">Inter-city travel</a></li>
+                    `;
+                } else if (button.textContent.includes("Partner with Us")) {
+                    content.innerHTML = `
+                        <li><a href="/earn-with-us">Earn with us</a></li>
+                        <li><a href="/partner-with-us">Own a franchise</a></li>
+                    `;
+                }
+                
+                dropdown.appendChild(content);
+                
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const allDropdowns = document.querySelectorAll('.dropdown-content');
+                    allDropdowns.forEach(d => {
+                        if (d !== content) d.style.display = 'none';
+                    });
+                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+
+            window.addEventListener('click', function() {
+                document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
