@@ -4,17 +4,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="https://d36g7qg6pk2cm7.cloudfront.net/assets/logo_dark-ecada95f43651e1bc659f7d503b1a694cab678b3d3bff5b9ea56e18f7c6989dc.png" />
+  <link rel="icon" type="image/svg+xml"
+    href="https://d36g7qg6pk2cm7.cloudfront.net/assets/logo_dark-ecada95f43651e1bc659f7d503b1a694cab678b3d3bff5b9ea56e18f7c6989dc.png" />
   <title>Royal Brothers</title>
   <link rel="stylesheet" href="styles.css" />
   <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
 
 <body>
+  <!-- navbar -->
+  <div class="navbar">
+    <!--Nav Contact Bar -->
+    <div class="contact-bar">
+      <div class="contact-bar-container" style="margin-right: 1rem;">
+        <div class="phone-bar">
+          <p class="phone-text">
+            <span
+              style="width:1200px; height:12px; font-size:16px; position:relative; top:1px; margin-bottom:2px; display:inline;">📞</span>
+            <a href="tel:+917795687594">+917795687594</a> / <a href="tel:+919019595595">+919019595595</a>
+          </p>
+          <p class="line-seperator" style="text-align: center;">|</p>
+          <p>
+            <a style="color: #006ccc; font-weight: 600; font-size: 0.8rem;text-decoration: underline"
+              href="https://wa.me/919019595595" target="_blank" aria-label="make a call from xdg-open">
+              Chat now
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar-container">
+      <div class="nav-wrapper">
+        <img class="sidebar-trigger" src="https://www.svgrepo.com/show/493681/hamburger-menu-mobile.svg"
+          style="width:30px;" alt="Hamburger Menu Icon">
+        <a href="https://www.royalbrothers.com/bangalore/bike-rentals" style="font-size: 26px;" class="logo">
+          <button class="logo-pc" style="width: 12rem; font-size: 26px;">
+            <img class="nav-logo-pc" style="width: 12rem;" alt="logo"
+              src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/royal_brothers_logo-229959d7727f356b2e4fc3bd9c0c527c60127d009c93989a93e2daa0b1c2d556.svg">
+          </button>
+          <button class="logo-mobile" style="width: 2.5rem; font-size: 26px;">
+            <img class="nav-logo-mobile" style="width: 2.5rem;" alt="logo"
+              src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/rb_logo_icon-e5352df69056d5b39e69a0dd288cb816077351ab5a415dcf10af07eb29cea3f3.svg">
+          </button>
+        </a>
+        <ul id="nav-1">
+          <li class="tablet-hide">
+            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/long-term" style="height: 58px;">
+              <span class="rbx-img-container" height="57.594px">
+                <img class="rbx-img"
+                  src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/RBX_logo-1b800838228373b51de1f1937bfd16588b29da9e8931b472dc8f7f1592e1f43c.svg "
+                  alt="rbx-img" loading="lazy">
+              </span>
+            </a>
+          </li>
+          <li class="tablet-hide">
+            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"
+              style="height: 58px; display: flex; align-items: center;">Tariff</a>
+          </li>
+          <li class="dropdown-trigger trigger-rotate tablet-hide">
+            <button style="height: 58px;display: flex;align-items: center;">What's new?
+              <svg class="rotate" width="28" height="28" viewBox="0 0 24 24" fill="black"
+                xmlns="http://www.w3.org/2000/svg" style="margin-left: 12px;">
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+            </button>
+          </li>
+          <ul id="dropdown-whats-new" class="dropdown-content" tabindex="0">
+            <li class="tablet-hide" tabindex="0">
+              <a
+                href="https://store.royalbrothers.com?utm_source=royalbrothers-rentals&amp;utm_medium=website&amp;utm_campaign=whats-new">Store
+                by RB
+                <span style="font-size: 10px;position: relative;top: -8px;color: red;left: -4px;">New</span>
+                s</a>
+            </li>
+
+            <li class="tablet-hide" tabindex="0">
+              <a
+                href="https://adventures.royalbrothers.com?utm_source=royalbrothers-rentals&amp;utm_medium=website&amp;utm_campaign=whats-new">Adventures
+                by RB
+                <span style="font-size: 10px;position: relative;top: -8px;color: red;left: -4px;">New</span>
+              </a>
+            </li>
+            <li tabindex="0">
+              <a href="https://www.royalbrothers.com/bangalore/bike-rentals/inter-city">
+                Inter-city travel
+              </a>
+            </li>
+          </ul>
+          <li id="offer" class="tablet-hide offer-hide">
+            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/offers"
+              style="height: 58px;display: flex;align-items: center;">Offers</a>
+          </li>
+          <li id="partner" class="dropdown-trigger trigger-rotate tablet-hide">
+            <button style="height: 58px;display: flex;align-items: center;">Partner with Us
+              <svg class="rotate" width="28" height="28" viewBox="0 0 24 24" fill="black"
+                xmlns="http://www.w3.org/2000/svg" style="margin-left: 12px;">
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+            </button>
+          </li>
+          <ul id="dropdown-partner" class="dropdown-content" tabindex="0">
+            <li tabindex="0"><a href="https://www.royalbrothers.com/earn-with-us"> Earn with us</a></li>
+            <li tabindex="0"><a href="https://www.royalbrothers.com/partner-with-us">Own a franchise</a>
+            </li>
+          </ul>
+        </ul>
+
+        <ul id="nav-2" class="right" style="display: flex; align-items: center;">
+          <li>
+            <a class="btn-flat trigger-rotate truncate" style="display: flex;align-items: center;" id="city-selector">
+              <svg width="26" height="26" style="margin-right: 0.2rem;" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 4.42 4.91 10.13 6.43 11.98a1 1 0 0 0 1.57 0C14.09 19.13 19 13.42 19 9c0-3.87-3.13-7-7-7zm0 10.5c-1.93 0-3.5-1.57-3.5-3.5S10.07 5.5 12 5.5 15.5 7.07 15.5 9s-1.57 3.5-3.5 3.5z" />
+              </svg>
+
+              <span>Bangalore</span>
+              <svg class="rotate" width="28" height="28" viewBox="0 0 24 24" fill="black"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="tablet-hide">
+            <div class="nav-line" style="margin-left: 1rem; margin-right: 1rem;"></div>
+          </li>
+          <li>
+            <a class="btn-flat btn-login tablet-hide">Login</a>
+          </li>
+          <li>
+            <a class="btn-signup tablet-hide btn-flat">Sign
+              up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="terms-toast">
+    </div>
+
+  </div>
+
   <!-- Hero section-->
   <section id="hero-section" class="hero-section">
     <img class="hero-image"
@@ -150,163 +285,199 @@
   <!-- main footer -->
 
   <!-- SVG Icons Definitions -->
-<div class="svg-icons-container">
-  <svg xmlns="http://www.w3.org/2000/svg">
-    <symbol id="svg_ico_mail" viewBox="0 0 24 24">
-      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-    </symbol>
-    
-    <symbol id="svg_ico_call-hollow" viewBox="0 0 24 24">
-      <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM5.1 5h1.7c.1.9.3 1.8.5 2.6L5.8 9.1c-.4-1.3-.7-2.7-.7-4.1zM19 18.9c-1.4 0-2.8-.2-4.1-.7l1.5-1.5c.8.2 1.7.4 2.6.5v1.7z"/>
-    </symbol>
+  <div class="svg-icons-container">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <symbol id="svg_ico_mail" viewBox="0 0 24 24">
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+      </symbol>
 
-    <symbol id="svg_ico_instagram" viewBox="0 0 24 24">
-      <path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8 0-3.2 0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2-2.8-6.2-6.2-6.2zM12 16c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm6.4-11.8c-.8 0-1.4.6-1.4 1.4s.6 1.4 1.4 1.4 1.4-.6 1.4-1.4-.6-1.4-1.4-1.4z"/>
-    </symbol>
+      <symbol id="svg_ico_call-hollow" viewBox="0 0 24 24">
+        <path
+          d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM5.1 5h1.7c.1.9.3 1.8.5 2.6L5.8 9.1c-.4-1.3-.7-2.7-.7-4.1zM19 18.9c-1.4 0-2.8-.2-4.1-.7l1.5-1.5c.8.2 1.7.4 2.6.5v1.7z" />
+      </symbol>
 
-    <symbol id="svg_ico_facebook" viewBox="0 0 24 24">
-      <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
-    </symbol>
+      <symbol id="svg_ico_instagram" viewBox="0 0 24 24">
+        <path
+          d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8 0-3.2 0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2-2.8-6.2-6.2-6.2zM12 16c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm6.4-11.8c-.8 0-1.4.6-1.4 1.4s.6 1.4 1.4 1.4 1.4-.6 1.4-1.4-.6-1.4-1.4-1.4z" />
+      </symbol>
 
-    <symbol id="svg_ico_twitter" viewBox="0 0 24 24">
-      <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"/>
-    </symbol>
+      <symbol id="svg_ico_facebook" viewBox="0 0 24 24">
+        <path
+          d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
+      </symbol>
 
-    <symbol id="svg_ico_linkedin" viewBox="0 0 24 24">
-      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-    </symbol>
+      <symbol id="svg_ico_twitter" viewBox="0 0 24 24">
+        <path
+          d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+      </symbol>
 
-    <symbol id="svg_ico_youtube" viewBox="0 0 24 24">
-      <path d="M23.5 6.2c-.3-1-1.1-1.8-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5c-1 .3-1.8 1.1-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1.1 1.8 2.1 2.1 1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5c1-.3 1.8-1.1 2.1-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/>
-    </symbol>
-  </svg>
-</div>
+      <symbol id="svg_ico_linkedin" viewBox="0 0 24 24">
+        <path
+          d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+      </symbol>
+
+      <symbol id="svg_ico_youtube" viewBox="0 0 24 24">
+        <path
+          d="M23.5 6.2c-.3-1-1.1-1.8-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5c-1 .3-1.8 1.1-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1.1 1.8 2.1 2.1 1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5c1-.3 1.8-1.1 2.1-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z" />
+      </symbol>
+    </svg>
+  </div>
 
   <footer class="main-footer">
     <div class="main-footer-container">
-       <div class="box-one">
-          <h5 class="boxes-heading box-heading-one">Royal Brothers</h5>
-          <ul>
-             <li>
-                <a class="footer-email" href="mailto:support@royalbrothers.com" target="_blank"> 
-                   <svg class="lozad" style="height:26px; width: 32px; margin-right: 25px;fill: #ddd;" alt="mail-icon" data-loaded="true"><use xlink:href="#svg_ico_mail"></use></svg>
-                   support@royalbrothers.com
-                </a>
-             </li>
-             <li> 
-                <svg class="lozad" style="height:22px; width: 28px; margin-right: 25px;fill: #ddd;" alt="phone-icon" data-loaded="true">
-                   <use xlink:href="#svg_ico_call-hollow"></use>
-                </svg><a href="tel:+917795687594">+917795687594</a> / <a href="tel:+919019595595">+919019595595</a>
-             </li>
-             <li> 
-             <div id="recapcha_div">
-             
-             </div> </li>
-          </ul>
-       </div>
-       <div class="box-two">
-          <h5 class="boxes-heading">Company</h5>
-          <ul>
-             
-                <li><a class="footer-aboutus" href="https://www.royalbrothers.com/about">About Us </a></li>
-            
-           
-                <li>  <a href="https://www.royalbrothers.com/blog">Blog </a></li>
-            
-                           <li>
-                            <a class="footer-careers" href="https://www.linkedin.com/company/royal-brothers/jobs/" target="_blank">
-                           Careers <span>We're hiring!</span>
-                            </a>
-                            </li>
-           
-            
-                <li> <a class="footer-contact" href="https://www.royalbrothers.com/reach">Contact Us </a></li>
-            
-          </ul>
-       </div>
-       <div class="box-three">
-          <h5 class="boxes-heading">Policies</h5>
-          <ul>
-             
-                <li><a class="footer-privacy" href="https://www.royalbrothers.com/privacy-policy">Privacy Policy    </a></li>
-             
-                <li> <a class="footer-tandc" href="https://www.royalbrothers.com/terms-and-conditions"> Terms &amp; Conditions  </a></li>
-            
-          </ul>
-       </div>
-       <div class="box-four">
-          <h5 class="boxes-heading">Quick Links</h5>
-          <ul>
-                
-                   <li class="footer-tariff">
-                   <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff">
-                      Tariff
- </a>                  </li>
-               
-                  
-                      <li class="footer-offers">
-                       <a href="https://www.royalbrothers.com/bangalore/bike-rentals/offers">
-                      Offers
- </a>                     </li>
-                  
-               
-                   <li class="footer-riding-gears">
-                      <a href="https://www.royalbrothers.com/bangalore/accessories-rentals">
-                      Riding Gears
- </a>                   
-                   </li>
-               
-             <li><a href="https://www.royalbrothers.com/partner-with-us">Own a franchise</a></li>
-         <li><a href="https://www.royalbrothers.com/earn-with-us">Earn with us</a></li>
- 
-             
-          </ul>
-       </div>
-       <div class="box-six">
-          <h5 class="boxes-heading">Follow Us</h5>
-          <ul>
-             <li class="socials"> 
-                <a class="footer-instagram" href="https://www.instagram.com/royalbrothersrentals/" target="_blank" aria-label="instagram link for mobile">
-                   <svg class="lozad" style="width:35.516px; height: 30px; margin-right:20.800px; fill: #ddd;" alt="instagram icon" data-loaded="true">
-                      <use xlink:href="#svg_ico_instagram"></use>
-                   </svg>
-                </a>
-                <a class="footer-facebook" href="https://www.facebook.com/RoyalBrothersBikeRentals/" target="_blank" aria-label="facebook link for mobile">
-                   <svg class="lozad" style="width:35.516px; height: 30px; margin-right:20.800px; fill: #ddd;" alt="facebook icon" data-loaded="true">
-                      <use xlink:href="#svg_ico_facebook"></use>
-                   </svg>
-                </a>
-                <a class="footer-instagram" href="https://x.com/royalbrothersin?lang=en" target="_blank" aria-label="twitter link for mobile">
-                   <svg class="lozad" style="width:35.516px; height: 30px; margin-right:20.800px; fill: #ddd;" alt="twitter icon" data-loaded="true">
-                      <use xlink:href="#svg_ico_twitter"></use>
-                   </svg>
-                </a>
-                <a class="footer-linkedin" href="https://www.linkedin.com/company/royal-brothers" target="_blank" aria-label="linkedin link for mobile">
-                   <svg class="lozad" style="width:35.516px;  height: 30px; margin-right:20.800px;  fill: #ddd;" alt="linkedin icon" data-loaded="true">
-                      <use xlink:href="#svg_ico_linkedin"></use>
-                   </svg>
-                </a>
-                <a class="footer-youtube" href="https://www.youtube.com/channel/UCRGf98BhX09kyw5hKBYhsdw" target="_blank" aria-label="youtube link for mobile">
-                   <svg class="lozad" style="width:40.516px;  height: 40px; margin-right:20.800px; padding-top:5px;  fill: #ddd;" alt="youtube icon" data-loaded="true">
-                      <use xlink:href="#svg_ico_youtube"></use>
-                   </svg>
-                </a>
-             </li>
-          </ul>
-       </div>
-       <div class="box-five">
-          <h5 class="boxes-heading">Download our app</h5>
-          <ul>
-             <li>
-                <a class="footer-ios" href="https://itunes.apple.com/in/app/royal-brothers-bike-rentals/id1405554590?mt=8" target="_blank">
-                   <img class="lozad apps-icon ios" data-src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/ios-29dc0a7844b0f235c57efedeaca39e57a8b2d1fa1bdb391c191ed025d04366c0.webp" alt="mail-icon" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/ios-29dc0a7844b0f235c57efedeaca39e57a8b2d1fa1bdb391c191ed025d04366c0.webp" data-loaded="true">
-                </a> 
-                <a class="footer-android" href="https://play.google.com/store/apps/details?id=com.royalbrothers&amp;hl=en_IN" target="_blank"> 
-                   <img class="lozad apps-icon android" data-src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/play_store-dc221867a86f0986d86eb8aa3b3b85dd0c46a086b2da88a2979ba6fcf48aab5c.webp" alt="mail-icon" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/play_store-dc221867a86f0986d86eb8aa3b3b85dd0c46a086b2da88a2979ba6fcf48aab5c.webp" data-loaded="true"> 
-                </a> 
-             </li>
-          </ul>
-          <!-- <ul class="footer-boxes-follow">
+      <div class="box-one">
+        <h5 class="boxes-heading box-heading-one">Royal Brothers</h5>
+        <ul>
+          <li>
+            <a class="footer-email" href="mailto:support@royalbrothers.com" target="_blank">
+              <svg class="lozad" style="height:26px; width: 32px; margin-right: 25px;fill: #ddd;" alt="mail-icon"
+                data-loaded="true">
+                <use xlink:href="#svg_ico_mail"></use>
+              </svg>
+              support@royalbrothers.com
+            </a>
+          </li>
+          <li>
+            <svg class="lozad" style="height:22px; width: 28px; margin-right: 25px;fill: #ddd;" alt="phone-icon"
+              data-loaded="true">
+              <use xlink:href="#svg_ico_call-hollow"></use>
+            </svg><a href="tel:+917795687594">+917795687594</a> / <a href="tel:+919019595595">+919019595595</a>
+          </li>
+          <li>
+            <div id="recapcha_div">
+
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="box-two">
+        <h5 class="boxes-heading">Company</h5>
+        <ul>
+
+          <li><a class="footer-aboutus" href="https://www.royalbrothers.com/about">About Us </a></li>
+
+
+          <li> <a href="https://www.royalbrothers.com/blog">Blog </a></li>
+
+          <li>
+            <a class="footer-careers" href="https://www.linkedin.com/company/royal-brothers/jobs/" target="_blank">
+              Careers <span>We're hiring!</span>
+            </a>
+          </li>
+
+
+          <li> <a class="footer-contact" href="https://www.royalbrothers.com/reach">Contact Us </a></li>
+
+        </ul>
+      </div>
+      <div class="box-three">
+        <h5 class="boxes-heading">Policies</h5>
+        <ul>
+
+          <li><a class="footer-privacy" href="https://www.royalbrothers.com/privacy-policy">Privacy Policy </a></li>
+
+          <li> <a class="footer-tandc" href="https://www.royalbrothers.com/terms-and-conditions"> Terms &amp; Conditions
+            </a></li>
+
+        </ul>
+      </div>
+      <div class="box-four">
+        <h5 class="boxes-heading">Quick Links</h5>
+        <ul>
+
+          <li class="footer-tariff">
+            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff">
+              Tariff
+            </a>
+          </li>
+
+
+          <li class="footer-offers">
+            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/offers">
+              Offers
+            </a>
+          </li>
+
+
+          <li class="footer-riding-gears">
+            <a href="https://www.royalbrothers.com/bangalore/accessories-rentals">
+              Riding Gears
+            </a>
+          </li>
+
+          <li><a href="https://www.royalbrothers.com/partner-with-us">Own a franchise</a></li>
+          <li><a href="https://www.royalbrothers.com/earn-with-us">Earn with us</a></li>
+
+
+        </ul>
+      </div>
+      <div class="box-six">
+        <h5 class="boxes-heading">Follow Us</h5>
+        <ul>
+          <li class="socials">
+            <a class="footer-instagram" href="https://www.instagram.com/royalbrothersrentals/" target="_blank"
+              aria-label="instagram link for mobile">
+              <svg class="lozad" style="width:35.516px; height: 30px; margin-right:20.800px; fill: #ddd;"
+                alt="instagram icon" data-loaded="true">
+                <use xlink:href="#svg_ico_instagram"></use>
+              </svg>
+            </a>
+            <a class="footer-facebook" href="https://www.facebook.com/RoyalBrothersBikeRentals/" target="_blank"
+              aria-label="facebook link for mobile">
+              <svg class="lozad" style="width:35.516px; height: 30px; margin-right:20.800px; fill: #ddd;"
+                alt="facebook icon" data-loaded="true">
+                <use xlink:href="#svg_ico_facebook"></use>
+              </svg>
+            </a>
+            <a class="footer-instagram" href="https://x.com/royalbrothersin?lang=en" target="_blank"
+              aria-label="twitter link for mobile">
+              <svg class="lozad" style="width:35.516px; height: 30px; margin-right:20.800px; fill: #ddd;"
+                alt="twitter icon" data-loaded="true">
+                <use xlink:href="#svg_ico_twitter"></use>
+              </svg>
+            </a>
+            <a class="footer-linkedin" href="https://www.linkedin.com/company/royal-brothers" target="_blank"
+              aria-label="linkedin link for mobile">
+              <svg class="lozad" style="width:35.516px;  height: 30px; margin-right:20.800px;  fill: #ddd;"
+                alt="linkedin icon" data-loaded="true">
+                <use xlink:href="#svg_ico_linkedin"></use>
+              </svg>
+            </a>
+            <a class="footer-youtube" href="https://www.youtube.com/channel/UCRGf98BhX09kyw5hKBYhsdw" target="_blank"
+              aria-label="youtube link for mobile">
+              <svg class="lozad"
+                style="width:40.516px;  height: 40px; margin-right:20.800px; padding-top:5px;  fill: #ddd;"
+                alt="youtube icon" data-loaded="true">
+                <use xlink:href="#svg_ico_youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="box-five">
+        <h5 class="boxes-heading">Download our app</h5>
+        <ul>
+          <li>
+            <a class="footer-ios" href="https://itunes.apple.com/in/app/royal-brothers-bike-rentals/id1405554590?mt=8"
+              target="_blank">
+              <img class="lozad apps-icon ios"
+                data-src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/ios-29dc0a7844b0f235c57efedeaca39e57a8b2d1fa1bdb391c191ed025d04366c0.webp"
+                alt="mail-icon"
+                src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/ios-29dc0a7844b0f235c57efedeaca39e57a8b2d1fa1bdb391c191ed025d04366c0.webp"
+                data-loaded="true">
+            </a>
+            <a class="footer-android"
+              href="https://play.google.com/store/apps/details?id=com.royalbrothers&amp;hl=en_IN" target="_blank">
+              <img class="lozad apps-icon android"
+                data-src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/play_store-dc221867a86f0986d86eb8aa3b3b85dd0c46a086b2da88a2979ba6fcf48aab5c.webp"
+                alt="mail-icon"
+                src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/play_store-dc221867a86f0986d86eb8aa3b3b85dd0c46a086b2da88a2979ba6fcf48aab5c.webp"
+                data-loaded="true">
+            </a>
+          </li>
+        </ul>
+        <!-- <ul class="footer-boxes-follow">
              <li class="socials"> 
                 <a class="footer-instagram" href="https://www.instagram.com/royalbrothersrentals/" target="_blank" aria-label="instagram link for desktop">
                    <svg class="lozad" style="width:35.516px; height: 30px; margin-right:2.1rem; fill: #ddd;" alt="instagram icon">
@@ -335,92 +506,126 @@
                 </a>
              </li>
           </ul> -->
-       </div>
+      </div>
     </div>
- </footer>
+  </footer>
 
   <!-- sub footer -->
 
   <footer class="sub-footer-container">
     <h1>Banglore Bike Rent</h1>
-    <p>Though there are other metropolitan cities in India, have you ever wondered why Bangalore is the most desired place for many people? Beyond its IT hubs, biotech companies, pubs, and nightlife, the city is loved for its pleasant weather and greenery. Unlike other cities that become extremely hot in summer, Bangalore's humidity is relatively low.</p>
-    
-    <p>Known as the 'Garden City of India,' it has numerous public parks along with an abundance of trees. Since the best time to visit the city is throughout the year, it's your sign to plan a visit now. We recommend taking a bike for rent in Banglore to explore the city to the fullest.</p>
+    <p>Though there are other metropolitan cities in India, have you ever wondered why Bangalore is the most desired
+      place for many people? Beyond its IT hubs, biotech companies, pubs, and nightlife, the city is loved for its
+      pleasant weather and greenery. Unlike other cities that become extremely hot in summer, Bangalore's humidity is
+      relatively low.</p>
+
+    <p>Known as the 'Garden City of India,' it has numerous public parks along with an abundance of trees. Since the
+      best time to visit the city is throughout the year, it's your sign to plan a visit now. We recommend taking a bike
+      for rent in Banglore to explore the city to the fullest.</p>
 
     <h2>Bike on rent in Banglore</h2>
-    <p>Bangalore is home to many famous tourist spots, such as Bangalore Palace, Lal Bagh Botanical Garden, Cubbon Park, Ulsoor Lake, and Nandi Hills. However, it is also infamous for its bumper-to-bumper traffic.</p>
-    
-    <p>If you choose cabs or public transport, you will likely regret your decision. They are time-consuming, and you will find yourself running late. If you need to shop in popular areas such as Commercial Street, KR Market, MG Road, Shivaji Nagar, or Church Street, finding parking for a car can be a real challenge. And that's why you should be renting a bike instead. It offers flexibility, freedom, and ease of movement.</p>
-    
-    <p>When you hire bike in Bangalore you can zip through the city's traffic, find a parking spot to station your vehicle easily, and make the most of your time without wasting it stuck in traffic. Our bikes come with safety gear and are easy to handle. So you need not worry about anything at all!</p>
+    <p>Bangalore is home to many famous tourist spots, such as Bangalore Palace, Lal Bagh Botanical Garden, Cubbon Park,
+      Ulsoor Lake, and Nandi Hills. However, it is also infamous for its bumper-to-bumper traffic.</p>
+
+    <p>If you choose cabs or public transport, you will likely regret your decision. They are time-consuming, and you
+      will find yourself running late. If you need to shop in popular areas such as Commercial Street, KR Market, MG
+      Road, Shivaji Nagar, or Church Street, finding parking for a car can be a real challenge. And that's why you
+      should be renting a bike instead. It offers flexibility, freedom, and ease of movement.</p>
+
+    <p>When you hire bike in Bangalore you can zip through the city's traffic, find a parking spot to station your
+      vehicle easily, and make the most of your time without wasting it stuck in traffic. Our bikes come with safety
+      gear and are easy to handle. So you need not worry about anything at all!</p>
 
     <h2>Why are bike rentals in Banglore the best option?</h2>
-    <p>Cabs can be quite expensive. For a one-way trip, you could end up paying far more than you expect. During peak hours, the fares double, leaving you with no option but to pay the higher fare just to reach your destination. Worse still, there's no guarantee that you will get your ride on time, as drivers often reject booking requests, leaving you waiting for a long time.</p>
-    
-    <p>Though Bangalore's public buses and metro services are widespread, they are too crowded and may not always operate on time. This may make your journey stressful and inconvenient.Hire bike in Bangalore and cover longer distances and save your hard-earned money as well. It might be hard to believe, but the bike rental fares start as low as Rs. 17 per hour.</p>
+    <p>Cabs can be quite expensive. For a one-way trip, you could end up paying far more than you expect. During peak
+      hours, the fares double, leaving you with no option but to pay the higher fare just to reach your destination.
+      Worse still, there's no guarantee that you will get your ride on time, as drivers often reject booking requests,
+      leaving you waiting for a long time.</p>
+
+    <p>Though Bangalore's public buses and metro services are widespread, they are too crowded and may not always
+      operate on time. This may make your journey stressful and inconvenient.Hire bike in Bangalore and cover longer
+      distances and save your hard-earned money as well. It might be hard to believe, but the bike rental fares start as
+      low as Rs. 17 per hour.</p>
 
     <h2>Bike rentals in Bangalore- the best for residents!</h2>
-    <p>When bikes are the only way to escape the chaos of the city, owning one can be a bit of a challenge. From maintenance and insurance to depreciation, managing a bike can get expensive. By opting for Banglore rent bike services, you can skip all your worries. We take care of the maintenance and insurance so that a bike of your choice is ready as and when you need it.</p>
-    
-    <p>Whether you're heading out on a date, attending an interview, or for weekend getaways, we have the perfect bike that suits every occasion. Why settle for boring when you can ride smart? Moreover, to truly live in the moment in Bangalore, you have to move at the city's pace. It won't wait for you to catch up. When you rent a bike, you can live up to all your plans, without any cancelling, delays, or disappointments.</p>
+    <p>When bikes are the only way to escape the chaos of the city, owning one can be a bit of a challenge. From
+      maintenance and insurance to depreciation, managing a bike can get expensive. By opting for Banglore rent bike
+      services, you can skip all your worries. We take care of the maintenance and insurance so that a bike of your
+      choice is ready as and when you need it.</p>
+
+    <p>Whether you're heading out on a date, attending an interview, or for weekend getaways, we have the perfect bike
+      that suits every occasion. Why settle for boring when you can ride smart? Moreover, to truly live in the moment in
+      Bangalore, you have to move at the city's pace. It won't wait for you to catch up. When you rent a bike, you can
+      live up to all your plans, without any cancelling, delays, or disappointments.</p>
 
     <h2>Scooter rentals in Bangalore</h2>
-    <p>Taking a scooty in rent in Bangalore is the most efficient way to commute across the city for low-key occasions. Whether it's for grocery shopping, visiting friends, grabbing a quick bite, going to a movie theatre, or house hunting, renting scooty in Bangalore can be convenient and affordable.</p>
+    <p>Taking a scooty in rent in Bangalore is the most efficient way to commute across the city for low-key occasions.
+      Whether it's for grocery shopping, visiting friends, grabbing a quick bite, going to a movie theatre, or house
+      hunting, renting scooty in Bangalore can be convenient and affordable.</p>
 
     <h2>Royal Brothers, your trusted bike rentals in Bengaluru!</h2>
-    <p>Are you looking to rent bike in Bangalore? Look no further than Royal Brothers! With 22+ pickup points across Bangalore, renting a bike has never been easier! Whether you're near Koramangala, Indiranagar, or Whitefield, you can find a Royal Brothers rental station just around the corner, making it super convenient to pick up and drop off your ride.</p>
-    
-    <p>From scooters to gear bikes and electric options, we have got everything for you. With a large fleet and 100+ bike models, we cater to all your needs. As India's leading bike rental service provider, we offer flexible and safe bike rentals on an hourly, daily, weekly, monthly, or even yearly basis, all at affordable prices with utmost convenience.</p>
-    
-    <p>For a fun weekend trip or daily rides, you can easily choose our service and explore the city on your own terms.</p>
-    
-    <p>We are present in multiple locations across the city so that our users do not have to travel further to hire a bike in Bangalore.<br>
-    Our pick-up points are at: Indiranagar, Koramangala, Marathahalli, Electronic City, Whitefield, Yelahanka, Majestic, Bellandur, and many more.</p>
+    <p>Are you looking to rent bike in Bangalore? Look no further than Royal Brothers! With 22+ pickup points across
+      Bangalore, renting a bike has never been easier! Whether you're near Koramangala, Indiranagar, or Whitefield, you
+      can find a Royal Brothers rental station just around the corner, making it super convenient to pick up and drop
+      off your ride.</p>
+
+    <p>From scooters to gear bikes and electric options, we have got everything for you. With a large fleet and 100+
+      bike models, we cater to all your needs. As India's leading bike rental service provider, we offer flexible and
+      safe bike rentals on an hourly, daily, weekly, monthly, or even yearly basis, all at affordable prices with utmost
+      convenience.</p>
+
+    <p>For a fun weekend trip or daily rides, you can easily choose our service and explore the city on your own terms.
+    </p>
+
+    <p>We are present in multiple locations across the city so that our users do not have to travel further to hire a
+      bike in Bangalore.<br>
+      Our pick-up points are at: Indiranagar, Koramangala, Marathahalli, Electronic City, Whitefield, Yelahanka,
+      Majestic, Bellandur, and many more.</p>
 
     <div class="presence">
-        <h2>OUR PRESENCE</h2>
-        <div class="locations">
-            Bikes for rent in <a href="#"> Agra </a> <span>•</span>
-            Bikes for rent in <a href="#">Ahmedabad</a> <span>•</span>
-            Bikes for rent in <a href="#">Bangalore</a> <span>•</span>
-            Rent electric vehicle in <a href="#">Bangalore</a> <span>•</span>
-            Bikes for rent in <a href="#">Bangalore Airport</a> <span>•</span>
-            Bikes for rent in <a href="#">Belagavi</a> <span>•</span>
-            Bikes for rent in <a href="#">Bhubaneswar</a> <span>•</span>
-            Bikes for rent in <a href="#">Calicut</a> <span>•</span>
-            Bikes for rent in <a href="#">Chandigarh</a> <span>•</span>
-            Bikes for rent in <a href="#">Chikmagalur</a> <span>•</span>
-            Bikes for rent in <a href="#">Cochin</a> <span>•</span>
-            Bikes for rent in <a href="#">Coorg</a> <span>•</span>
-            Bikes for rent in <a href="#">Delhi</a> <span>•</span>
-            Bikes for rent in <a href="#">Hyderabad</a> <span>•</span>
-            Bikes for rent in <a href="#">Jaipur</a> <span>•</span>
-            Bikes for rent in <a href="#">Jaisalmer</a> <span>•</span>
-            Bikes for rent in <a href="#">Jodhpur</a> <span>•</span>
-            Bikes for rent in <a href="#">Kolkata</a> <span>•</span>
-            Bikes for rent in <a href="#">Leh Ladakh</a> <span>•</span>
-            Bikes for rent in <a href="#">Manali</a> <span>•</span>
-            Bikes for rent in <a href="#">Mangalore</a> <span>•</span>
-            Bikes for rent in <a href="#">Mysore</a> <span>•</span>
-            Bikes for rent in <a href="#">Pondicherry</a> <span>•</span>
-            Bikes for rent in <a href="#">Puri</a> <span>•</span>
-            Bikes for rent in <a href="#">Ranchi</a> <span>•</span>
-            Bikes for rent in <a href="#">Surat</a> <span>•</span>
-            Bikes for rent in <a href="#">Tirupati</a> <span>•</span>
-            Bikes for rent in <a href="#">Trivandrum</a> <span>•</span>
-            Bikes for rent in <a href="#">Udaipur</a> <span>•</span>
-            Bikes for rent in <a href="#">Udupi - manipal</a> <span>•</span>
-            Bikes for rent in <a href="#">Vijayawada</a> <span>•</span>
-            Bikes for rent in <a href="#">Vizag</a> <span>•</span>
-            Bikes for rent in <a href="#">Wayanad</a>
-        </div>
+      <h2>OUR PRESENCE</h2>
+      <div class="locations">
+        Bikes for rent in <a href="#"> Agra </a> <span>•</span>
+        Bikes for rent in <a href="#">Ahmedabad</a> <span>•</span>
+        Bikes for rent in <a href="#">Bangalore</a> <span>•</span>
+        Rent electric vehicle in <a href="#">Bangalore</a> <span>•</span>
+        Bikes for rent in <a href="#">Bangalore Airport</a> <span>•</span>
+        Bikes for rent in <a href="#">Belagavi</a> <span>•</span>
+        Bikes for rent in <a href="#">Bhubaneswar</a> <span>•</span>
+        Bikes for rent in <a href="#">Calicut</a> <span>•</span>
+        Bikes for rent in <a href="#">Chandigarh</a> <span>•</span>
+        Bikes for rent in <a href="#">Chikmagalur</a> <span>•</span>
+        Bikes for rent in <a href="#">Cochin</a> <span>•</span>
+        Bikes for rent in <a href="#">Coorg</a> <span>•</span>
+        Bikes for rent in <a href="#">Delhi</a> <span>•</span>
+        Bikes for rent in <a href="#">Hyderabad</a> <span>•</span>
+        Bikes for rent in <a href="#">Jaipur</a> <span>•</span>
+        Bikes for rent in <a href="#">Jaisalmer</a> <span>•</span>
+        Bikes for rent in <a href="#">Jodhpur</a> <span>•</span>
+        Bikes for rent in <a href="#">Kolkata</a> <span>•</span>
+        Bikes for rent in <a href="#">Leh Ladakh</a> <span>•</span>
+        Bikes for rent in <a href="#">Manali</a> <span>•</span>
+        Bikes for rent in <a href="#">Mangalore</a> <span>•</span>
+        Bikes for rent in <a href="#">Mysore</a> <span>•</span>
+        Bikes for rent in <a href="#">Pondicherry</a> <span>•</span>
+        Bikes for rent in <a href="#">Puri</a> <span>•</span>
+        Bikes for rent in <a href="#">Ranchi</a> <span>•</span>
+        Bikes for rent in <a href="#">Surat</a> <span>•</span>
+        Bikes for rent in <a href="#">Tirupati</a> <span>•</span>
+        Bikes for rent in <a href="#">Trivandrum</a> <span>•</span>
+        Bikes for rent in <a href="#">Udaipur</a> <span>•</span>
+        Bikes for rent in <a href="#">Udupi - manipal</a> <span>•</span>
+        Bikes for rent in <a href="#">Vijayawada</a> <span>•</span>
+        Bikes for rent in <a href="#">Vizag</a> <span>•</span>
+        Bikes for rent in <a href="#">Wayanad</a>
+      </div>
     </div>
-</footer>
+  </footer>
 
   <!-- last footer -->
   <div class="banner">
     Made with <span class="heart">❤</span> by team Royal Brothers
-</div>
+  </div>
 </body>
 
 </html>
