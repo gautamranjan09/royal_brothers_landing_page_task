@@ -76,6 +76,7 @@ nav .nav-wrapper {
   margin-top: 0.9rem;
   width: 1.75rem;
   padding-bottom: 1.6rem;
+  cursor: pointer;
 }
 nav .sidenav-trigger {
   float: left;
@@ -109,12 +110,14 @@ nav .sidenav-trigger {
   background: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 .navbar .navbar-container .nav-wrapper .logo .logo-mobile {
   display: none;
   background: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .navbar .navbar-container .nav-wrapper .logo .logo-pc .nav-logo-pc {
@@ -508,6 +511,129 @@ nav ul a.btn-flat {
   cursor: pointer;
 }
 
+/* sidebar css */
+
+
+
+
+
+
+.sidebar-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 998;
+}
+
+.sidebar-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 280px;
+  height: 100vh;
+  background: white;
+  padding: 10px 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-close-btn {
+  font-size: 35px;
+  padding-bottom: 9px;
+  cursor: pointer;
+  color: #333;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* .sidebar-close-btn:hover {
+  background: #f5f5f5;
+} */
+
+.sidebar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu-section {
+  margin-bottom: 0;
+}
+
+.sidebar-menu-item {
+  padding: 12px 15px;
+  color: #555;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.sidebar-menu-item:hover {
+  background: #f8f8f8;
+  color: #f4c430;
+}
+
+/* New text styling */
+.sidebar-new-text {
+  color: #ff0000;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.sidebar-divider {
+  height: 1px;
+  background: #eee;
+  margin: 0 0 20px;
+}
+
+.sidebar-contact {
+  font-size: 12px;
+  color: #666;
+  padding: 25px 0;
+  border-top: 1px solid #eee;
+}
+.city-modal-brand-logo {
+  height: 45px;
+}
+
+
+
+
+
+
+
+
+
 /* city modal css */
 
 .city-modal-overlay {
@@ -519,8 +645,6 @@ nav ul a.btn-flat {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-
-  /* New styles */
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -1051,6 +1175,7 @@ input[type="time"] {
   border: 0.0625rem solid #efefef;
   border-radius: 0.5rem;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .carousel-item img {

@@ -252,6 +252,35 @@ populateCityGrid(cities);
 
 // city modal end----------------------------------------------
 
+//sidebar start----------------------------------------------
+
+const sidebar = document.querySelector(".sidebar");
+const backdrop = document.querySelector(".sidebar-backdrop");
+const closeBtn = document.querySelector(".sidebar-close-btn");
+const showBtn = document.querySelector(".show-sidebar-btn");
+
+function openSidebar() {
+  sidebar.classList.add("active");
+  backdrop.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeSidebar() {
+  sidebar.classList.remove("active");
+  backdrop.classList.remove("active");
+  document.body.style.overflow = "auto";
+}
+
+closeBtn.addEventListener("click", closeSidebar);
+backdrop.addEventListener("click", closeSidebar);
+showBtn.addEventListener("click", openSidebar);
+// Close sidebar on escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeSidebar();
+});
+
+//sidebar end----------------------------------------------
+
 //for featured section crousel
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector(".carousel-track");
