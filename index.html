@@ -119,7 +119,7 @@
         </ul>
 
         <ul id="nav-2" class="right" style="display: flex; align-items: center;">
-          <li>
+          <li onclick="openModal()">
             <a class="btn-flat trigger-rotate truncate" style="display: flex;align-items: center;" id="city-selector">
               <svg width="26" height="26" style="margin-right: 0.2rem;" viewBox="0 0 24 24" fill="black"
                 xmlns="http://www.w3.org/2000/svg">
@@ -127,8 +127,8 @@
                   d="M12 2C8.13 2 5 5.13 5 9c0 4.42 4.91 10.13 6.43 11.98a1 1 0 0 0 1.57 0C14.09 19.13 19 13.42 19 9c0-3.87-3.13-7-7-7zm0 10.5c-1.93 0-3.5-1.57-3.5-3.5S10.07 5.5 12 5.5 15.5 7.07 15.5 9s-1.57 3.5-3.5 3.5z" />
               </svg>
 
-              <span>Bangalore</span>
-              <svg class="rotate" width="28" height="28" viewBox="0 0 24 24" fill="black"
+              <span id="citySelectButton">Bangalore</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="black"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 10l5 5 5-5H7z" />
               </svg>
@@ -151,6 +151,38 @@
     <div class="terms-toast">
     </div>
 
+  </div>
+
+  <!-- city modal -->
+
+  <div class="city-modal-overlay" id="modalOverlay">
+    <div class="city-modal">
+      <div class="city-modal-header">
+        <div class="city-modal-brand-container">
+          <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/logo-b03af389c15608bf4fa52378f448a48a9c8f92f70242cc88340e971e7599d6ae.png" class="city-modal-brand-logo" alt="Royal Brothers" />
+          <div class="city-modal-divider"></div>
+          <span class="city-modal-header-text">Bike Rentals</span>
+        </div>
+        <button class="city-modal-close-button" onclick="closeModal()">×</button>
+      </div>
+
+      <div class="city-modal-search-wrapper">
+        <div class="city-modal-search-container">
+          <svg class="city-modal-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="city-modal-search-input" placeholder="Search or type city to select" oninput="filterCities(this.value)" />
+          <button class="city-modal-clear-button" onclick="clearSearch()">Clear</button>
+        </div>
+      </div>
+
+      <div class="cities-container">
+        <div class="cities-grid" id="citiesGrid">
+          <!-- Cities will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Hero section-->
