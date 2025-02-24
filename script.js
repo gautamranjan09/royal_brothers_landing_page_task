@@ -210,24 +210,13 @@ function filterCities(searchTerm) {
 }
 
 function openModal() {
-  document.getElementById("modalOverlay").style.display = "block";
-  //document.body.style.overflow = "hidden";
-
-  // Trigger reflow
-  document.getElementById("modalOverlay").offsetHeight;
   document.getElementById("modalOverlay").classList.add("active");
-  //document.body.style.overflow = "hidden";
-
   populateCityGrid(cities);
 }
 
 function closeModal() {
   const modal = document.getElementById("modalOverlay");
   modal.classList.remove("active");
-  setTimeout(() => {
-    modal.style.display = "none";
-    document.body.style.overflow = "auto";
-  }, 300); // Match the transition duration
 }
 
 function clearSearch() {

@@ -513,11 +513,6 @@ nav ul a.btn-flat {
 
 /* sidebar css */
 
-
-
-
-
-
 .sidebar-backdrop {
   position: fixed;
   top: 0;
@@ -626,18 +621,10 @@ nav ul a.btn-flat {
   height: 45px;
 }
 
-
-
-
-
-
-
-
-
 /* city modal css */
 
 .city-modal-overlay {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -645,12 +632,16 @@ nav ul a.btn-flat {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  visibility: hidden;
+
+  /* New styles */
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .city-modal-overlay.active {
   opacity: 1;
+  visibility: visible;
 }
 
 .city-modal-overlay .city-modal {
